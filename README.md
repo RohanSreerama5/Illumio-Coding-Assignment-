@@ -30,7 +30,7 @@ Refinements/Optimizations:
 Provided more time, there are certainly a number of ideas that would make this program more robust. 
 - I could create a single method used to split the bounds of an IP range and subsequently split their octets, convert them to integers,
 and store them in variables. This method could be called inside the while() loop instead of the current solution. 
-- Perhaps I could even use a library like OpenCSV or Apache's CSVParser class to parse through the .csv file. 
+- Perhaps I could even use a library like OpenCSV or Apache's CSVParser class to read through the .csv file. 
 -  If this was a real firewall, I could use a queue to queue up incoming network traffic. Each packet would be stored as a node, which can be passed to the algorithm individually to decide if the packet should be allowed past the firewall. 
 - Code complexity could also be reduced if a hash map was used to first map the packet's direction and protocol to every Fire Wall Rule with the same packet and direction. Following this, the algorithm would scan through this new list of rules to see which one has the 
 appropriate IP/IP range and port/port range. Essentially, network traffic would be stored as the values and the keys would be individual Fire Wall Rules. In the first pass, all of the keys that have a direction and protocol that matches the packet would be mapped to that packet. In the second pass, the algorithm would scan through this new list of keys to determine if the port matches, and finally the IP. 
@@ -39,7 +39,8 @@ After the hash table has been created in the first pass, the algorithm can simpl
 Fire Wall Rules to linear scan through to determine if the packet matches with any one rule. Lookups take constant time O(1) which can signficanly reduce execution time. 
 
 Interested Team: 
-I would like to contribute to the platform team as I'm interested in managing infrastructure, both on-prem and on the cloud, for various applications. I'm particularly keen on implementing solutions for high availability and scalability using technologies like Kubernetes and automating installations, maintenance, monitoring, etc. 
+I would like to contribute to the platform team as I'm keen on managing infrastructure in the cloud, specifically learning about network security and micro-segementation. 
+
 Ranking: 
 1. Platform Team 
 2. Data Team 
