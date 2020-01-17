@@ -36,7 +36,7 @@ and store them in variables. This method could be called inside the while() loop
 appropriate IP/IP range and port/port range. Essentially, network traffic would be stored as the values and the keys would be individual Fire Wall Rules. In the first pass, all of the keys that have a direction and protocol that matches the packet would be mapped to that packet. In the second pass, the algorithm would scan through this new list of keys to determine if the port matches, and finally the IP. 
 
 After the hash table has been created in the first pass, the algorithm can simply perform lookups to generate a list of relevant 
-Fire Wall Rules to continue scanning through to determine if the packet matches with any one rule. Lookups take constant time O(1) which can signficanly reduce execution time. 
+Fire Wall Rules to linear scan through to determine if the packet matches with any one rule. Lookups take constant time O(1) which can signficanly reduce execution time. 
 
 Interested Team: 
 I would like to contribute to the platform team as I'm interested in managing infrastructure, both on-prem and on the cloud, for various applications. I'm particularly keen on implementing solutions for high availability and scalability using technologies like Kubernetes and automating installations, maintenance, monitoring, etc. 
